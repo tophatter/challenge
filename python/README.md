@@ -1,5 +1,4 @@
 # Instructions
-# Instructions
 
 ## To play:
 

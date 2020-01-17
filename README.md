@@ -1,6 +1,6 @@
 # Welcome to the Tophatter Coding Challenge
 
-The challenge can be found at https://tophatter.com/challenge
+The challenge can be found at https://tophatter.com/challenge.
 
 Feel free to clone this repo and work in the language of your choice.
 

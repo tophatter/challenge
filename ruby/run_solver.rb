@@ -1,5 +1,6 @@
 # DO NOT EDIT -----------------------------------------------------------
 require_relative 'solver'
+require_relative 'board'
 
 def run_solver(n, num_mines, num_trials)
     wins = 0
@@ -19,7 +20,7 @@ def run_solver(n, num_mines, num_trials)
     delta = finish - start
     puts "Time taken: #{delta.round(2)}s"
     percentage = wins * 100.0 / num_trials
-    puts "Win percentage: #{wins}/#{num_trials} #{percentage.round(2)}%"
+    puts "Win percentage: #{percentage.round(2)}% (#{wins}/#{num_trials})"
 end
 
 def parse_args 

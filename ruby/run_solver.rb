@@ -1,8 +1,6 @@
 # DO NOT EDIT -----------------------------------------------------------
 require_relative 'solver'
 
-INTERVAL = 1
-
 def run_solver(n, num_mines, num_trials)
     wins = 0
     current_percentage = 0
@@ -12,10 +10,9 @@ def run_solver(n, num_mines, num_trials)
         if solve board
             wins += 1
         end
-        if (i+1) * 100 / num_trials >= current_percentage + INTERVAL
-            current_percentage += INTERVAL
-            print("\r#{current_percentage}% complete (#{i+1}/#{num_trials})")
-        end
+
+        current_percentage = (i + 1) * 100 / num_trials
+        print("\r#{current_percentage}% complete (#{i+1}/#{num_trials})")
     end
     finish = Time.now
     puts

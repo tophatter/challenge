@@ -17,7 +17,7 @@ def run_solver(n, num_mines, num_trials):
     finish_time = time.time()
     print()
     print(f'Time taken: {finish_time - start_time:.2f}s')
-    print(f'Win percentage: {wins}/{num_trials} {wins * 100 / num_trials:.2f}%')
+    print(f'Win percentage: {wins * 100 / num_trials:.2f}% ({wins}/{num_trials})')
 
 def parse_args():
     parser = argparse.ArgumentParser()

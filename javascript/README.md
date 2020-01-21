@@ -15,4 +15,4 @@ Launches the test runner in the interactive watch mode.<br />
 
 ### `yarn solve [ n [ numMines [ numTrials ] ] ]`
 
-Launches the run solver script with the given optional arguments <br />
+Launches the run solver script with the given optional arguments. <br />

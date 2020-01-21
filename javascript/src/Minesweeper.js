@@ -1,12 +1,15 @@
 import React from 'react';
-
+import Board from './Board';
 
 class Minesweeper extends React.PureComponent {
     constructor(props) {
         super(props)
+        const n = 10;
+        const numMines = 10;
         this.state = {
-            n: 10,
-            numMines: 10,
+            n,
+            numMines,
+            board: new Board(n, numMines),
             icons: {
                 blank: 'http://i.imgur.com/HM1e3Tbb.jpg',
                 pressed: 'http://i.imgur.com/bGT8xGEb.jpg',

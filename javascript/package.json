@@ -63,7 +63,8 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "solve": "node scripts/runSolver.js"
   },
   "eslintConfig": {
     "extends": "react-app"
